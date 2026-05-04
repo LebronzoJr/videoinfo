@@ -7,9 +7,10 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "electron": "electron ."
   },
   "dependencies": {
-    "electron": "^41.5.0"
+    "electron": "^41.5.0",
+    "fluent-ffmpeg": "^2.1.3"
   }
 }
