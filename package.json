@@ -10,6 +10,7 @@
     "electron": "electron ."
   },
   "dependencies": {
+    "@electron/remote": "^2.1.3",
     "electron": "^41.5.0",
     "fluent-ffmpeg": "^2.1.3"
   }
