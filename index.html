@@ -1,9 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+      <title>Document</title>
 </head>
 <body>
     <h1>Video Info App</h1>
+    <button id="selectFile">Select a Video File</button>
+    <div id="results"></div>
 </body>
+<script>
+    const { dialog } = require("@electron/remote");
+    document.getElementById("selectFile").addEventListener("click", async ()=>{
+        const result = await dialog.showOpenDialog(
+            {
+                properties: ['openFile'],
+                filter: [
+                    {
+                        name:"Videos",
+                        extensions:['mkv', 'avi', 'mp4', 'mov', 'wmv']
+                    }
+                ]
+            }
+        );
+        
+    })
+</script>
 </html>
